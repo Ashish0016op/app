@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+           float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: green;
+        }
+        main#formDetails {
+            border: black;
+        }
+        form#formDetails {
+            margin-left: 190px;
+            width: 18%;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: #A5D7E8;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/shop_details">shop</a></li>
+                <li><a href="/">Add products</a></li>
+                <li><a href="/contact_us">Contacts us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main >
+        <form id="formDetails" action="/submited_form" method="POST">
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+            <label for="Name">Name</label><br>
+            <input type="text" id="Name"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

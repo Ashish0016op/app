@@ -1,16 +1,8 @@
 const express= require('express');
-const shops= express.Router();
+const router=express.Router();
+const path=require('path');
 
-
-
-
-
-
-shops.use('/products',(req,res,next)=>{
-    console.log('in another middleware');
-    res.send('<h1>Hello from express</h1>');
+router.get('/shop_details',(req,res,next)=>{
+    res.sendFile(path.join(__dirname,'../','views','shops.html'));
 })
-
-
-
-  module.exports=shops;
+module.exports=router;

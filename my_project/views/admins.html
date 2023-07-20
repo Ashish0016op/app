@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add products</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+           float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/shop_details">shop</a></li>
+                <li><a href="/">Add products</a></li>
+                <li><a href="/contact_us">Contacts us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="/" method="POST">
+        <input type="text" name="productName">
+        <button type="submit">Add Products</button>
+    </form>
+    
+</body>
+</html>
