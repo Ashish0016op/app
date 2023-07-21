@@ -1,13 +1,7 @@
 const express=require('express');
 const router=express.Router();
-const path=require('path');
 
-router.get('/',(req,res,next)=>{
-    console.log('in the middleware');
-    res.sendFile(path.join(__dirname,'../','views','admins.html'));
-})
+const productControllers=require('../controllers/products');
 
-
-
-
+router.get('/',productControllers.getAddProducts);
 module.exports=router;

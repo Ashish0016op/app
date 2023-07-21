@@ -1,8 +1,5 @@
 const express= require('express');
 const router=express.Router();
-const path=require('path');
-
-router.get('/shop_details',(req,res,next)=>{
-    res.sendFile(path.join(__dirname,'../','views','shops.html'));
-})
+const shopDetailsControllers=require('../controllers/products');
+router.get('/shop_details',shopDetailsControllers.getShopDetails);
 module.exports=router;
